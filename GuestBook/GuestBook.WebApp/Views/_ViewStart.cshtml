@@ -1,0 +1,12 @@
+﻿@{
+    string CurrentAction = this.ViewContext.RouteData.Values["action"].ToString();
+    switch (CurrentAction)
+    {
+        case "Login":
+            Layout = "";
+            break;
+        default:
+            Layout = "~/Views/Shared/_Layout.cshtml";
+            break;
+    }
+}
